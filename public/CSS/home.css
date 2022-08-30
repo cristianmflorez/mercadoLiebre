@@ -142,6 +142,7 @@ main{
     display: flex;
     flex-direction: column;
     align-self: center;
+    width: 100%;
 }
 
 
