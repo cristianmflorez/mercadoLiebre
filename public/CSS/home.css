@@ -282,9 +282,6 @@ footer{
 }
 
 @media (max-width: 361px){
-    .product-info p:nth-child(3){
-        display: none;
-    }
 
     .footer-container{
         flex-wrap: wrap;
@@ -312,5 +309,9 @@ footer{
 
     .articles-container{
         justify-content: space-evenly;
+    }
+
+    .product-info p:nth-child(3){
+        display: none;
     }
 }

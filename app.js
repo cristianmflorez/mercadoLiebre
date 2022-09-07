@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-app.get('/home', (req, res)=>{
+app.get('/', (req, res)=>{
     res.sendFile((__dirname + '/views/home.html'));
 });
 
