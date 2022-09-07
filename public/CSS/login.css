@@ -145,79 +145,39 @@ main{
     width: 100%;
 }
 
+/*Formulario login*/
 
-.banner img{
-    object-fit: cover;
-    width: 100%;
-    min-height: 100px;
-}
-
-.vist-title, .promotions-title{
-    width: 100vw;
-    font-size: var(--prices);
-    padding: 0 10px 0;
-    margin-top: 5px;
-    margin-left: 1%;
-}
-
-.last-views, .promotions{
+.loginContainer{
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.articles-container{
+.loginForm{
+    margin: 50px;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: 1%;
+    flex-direction: column;
 }
 
-.product-card{
-    min-width: 240px;
-    width: 240px;
-    background: white;
+.usename, .password, .loginButton{
+    width: 50vw;
+    margin: 25px;
+    height: 40px;
     border-radius: 5px;
-    margin: 15px;
-    box-shadow : 0px 0px 10px rgb(100, 100, 100);
+    border: none;
+    font-size: var(--prices);
+    padding-left: 20px;
+    outline: none;
 }
 
-.product-card img{
-    width: 100%;
-    object-fit: cover;
+.loginButton{
+    padding-left: 0;
+    background: var(--ligthBlue);
+    color: var(--ligthGray);
+    cursor: pointer;
 }
 
-.product-info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 10px;
-    margin-right: 10px;
-    border-top: 1px solid gray;
-}
-
-.product-info p{
-    font-size: var(--descripcion);
-}
-
-.product-info p:nth-child(1){
-    font-weight: bold;
-}
-
-.product-info p:nth-child(2){
-    color: var(--green);
-}
-
-.send-icon{
-    width: 35px;
-    height: 35px;
-    padding-right: 15px;
-    transition: rotate 1s;
-}
-
-.send-icon:hover{
-    transform: rotate(-45deg);
-}
+/*footer*/
 
 footer{
     display: flex;
@@ -241,6 +201,7 @@ footer{
     font-size: var(--icon-size);
     color: var(--blue);
     margin-bottom: 10px;
+    
 }
 
 .footer-section p:nth-child(2){
@@ -278,11 +239,10 @@ footer{
         height: 100px;
         justify-content: center;
     }
-
-    .articles-container{
-        justify-content: space-evenly;
-    }
     
+    .usename, .password, .loginButton{
+        width: 75vw;
+    }
 }
 
 @media (max-width: 361px){
@@ -307,15 +267,4 @@ footer{
         width: 100%;
     }
 
-    .product-card{
-        box-shadow : none;
-    }
-
-    .articles-container{
-        justify-content: space-evenly;
-    }
-
-    .product-info p:nth-child(3){
-        display: none;
-    }
 }
