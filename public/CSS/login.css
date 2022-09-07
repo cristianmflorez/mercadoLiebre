@@ -201,7 +201,7 @@ footer{
     font-size: var(--icon-size);
     color: var(--blue);
     margin-bottom: 10px;
-    
+    cursor: pointer;
 }
 
 .footer-section p:nth-child(1):hover{
