@@ -216,11 +216,11 @@ main{
     width: 35px;
     height: 35px;
     padding-right: 15px;
-    transition: rotate 1s;
     border-radius: 5px;
 }
 
 .send-icon:hover{
+    transition: all 0.5s;
     transform: rotate(-45deg);
 }
 
