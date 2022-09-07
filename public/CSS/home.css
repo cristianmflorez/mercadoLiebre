@@ -206,8 +206,6 @@ main{
 
 .product-info p:nth-child(1){
     font-weight: bold;
-    font-size: 2em;
-    margin-bottom: 10px;
 }
 
 .product-info p:nth-child(2){
